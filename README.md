@@ -40,7 +40,7 @@ go mod tidy
 5. Generate .pb.go files from the proto file
 
 ```bash
-protoc --go_out=. --go_opt=paths=source_relative \ --go-grpc_out=. --go-grpc_opt=paths=source_relative \ proto/hello.proto
+protoc --go_out=. --go_opt=paths=source_relative \ --go-grpc_out=. --go-grpc_opt=paths=source_relative \ proto/greet.proto
 ```
 
 6. Create the server and client directories and create the main.go files with necessary controllers and services
@@ -51,7 +51,7 @@ protoc --go_out=. --go_opt=paths=source_relative \ --go-grpc_out=. --go-grpc_opt
 1. Install the dependencies
 
 ```bash
-go mod download
+go mod tidy
 ```
 
 2. Run the server

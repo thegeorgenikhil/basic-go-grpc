@@ -1,5 +1,3 @@
-// proto/hello.proto
-
 // for syntax highlighting we use proto3 version
 syntax="proto3";
 
